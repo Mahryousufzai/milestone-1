@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Reduced padding for better spacing */
+}
+
+/* Container Flexbox Styling */
+.container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Added shadow for better visual appeal */
+}
+
+/* Left Section */
+.left {
+    background-color: lightblue;
+    color: #333;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-right: 5px solid wheat;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid deepskyblue;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px deepskyblue;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section */
+.right {
+    padding: 20px;
+    width: 65%;
+}
+
+/* Button Styling */
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px deepskyblue;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: deepskyblue;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacking left and right sections */
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-picture {
+        max-width: 120px; /* Adjust profile picture size */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons on small screens */
+        font-size: 1.2em;
+    }
+}
+
+/* Further responsiveness for very small screens */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .left, .right {
+        padding: 10px;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+}
